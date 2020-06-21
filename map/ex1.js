@@ -27,7 +27,16 @@ Expected OUTPUT for this sample array:
 */
 
 function getStringsLength(strings) {
+  return strings.map(str => str+ " contains "+str.length+" characters");
 }
+
+console.log(getStringsLength([
+  'Chicken',
+  'Bacon',
+  'Tofu',
+  'Mayonnaise'
+]));
+
 
 // If you need, you can always visualize the result with a console.log.
 // In that case, uncomment the line below (you can also add your own
